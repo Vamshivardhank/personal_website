@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vamshi's Personal Website</title>
+  <style>
+    /* CSS styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    main {
+      margin: 20px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .content {
+      width: 70%;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    p {
+      margin-top: 0;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    li {
+      margin: 5px;
+      padding: 10px;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .red {
+      background-color: #f44336;
+    }
+    .green {
+      background-color: #4caf50;
+    }
+    .blue {
+      background-color: #2196f3;
+    }
+    .yellow {
+      background-color: #ffeb3b;
+    }
+    .purple {
+      background-color: #9c27b0;
+    }
+    .li-hover {
+      transform: scale(1.1);
+    }
+    .rating-container {
+      display: flex;
+      align-items: center;
+    }
+    .rating-stars {
+      color: #ffd700;
+      font-size: 20px;
+      margin-right: 5px;
+    }
+    .profile-pic {
+      max-width: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .contact-form {
+      max-width: 400px;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .contact-form input[type="text"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+    .contact-form input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-form input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+      .content {
+        width: 100%;
+      }
+      .profile-pic {
+        margin: 20px auto;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vamshi's Personal Website</h1>
+  </header>
+  <main>
+    <div class="content">
+      <section>
+        <h2>About Me</h2>
+        <p>Hello! I'm Vamshi, and I'm passionate about web development. I enjoy working with HTML, CSS, and JavaScript to create interactive and engaging websites.</p>
+      </section>
+      <section>
+        <h2>Strengths</h2>
+        <ul>
+          <li class="red">HTML</li>
+          <li class="green">CSS</li>
+          <li class="blue">JavaScript</li>
+          <li class="yellow">Responsive Web Design</li>
+          <li class="purple">Problem Solving</li>
+          <li class="red">UI/UX Design</li>
+          <li class="green">Team Collaboration</li>
+          <li class="blue">Project Management</li>
+          <li class="yellow">Debugging</li>
+          <li class="purple">Version Control (Git)</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Interests</h2>
+        <ul>
+          <li class="red">
+            Front-end Development
+            <div class="rating-container">
+              <span class="rating-stars">★</span><span class="rating-stars">★</span><span class="rating-stars">★</span><span class="rating-stars">★</span><span class="rating-stars">★</span>
+            </div>
+          </li>
+          <li class="green">
+            User Experience (UX)
+            <div class="rating-container">
+              <span class="rating-stars">★</span><span class="rating-stars">★</span><span class="rating-stars">★</span><span class="rating-stars">★</span><span class="rating-stars">☆</span>
+            </div>
+          </li>
+          <li class="blue">
+            Web Accessibility
+            <div class="rating-container">
+              <span class="rating-stars">★</span><span class="rating-stars">★</span><span class="rating-stars">★</span><span class="rating-stars">☆</span><span class="rating-stars">☆</span>
+            </div>
+          </li>
+          <li class="yellow">
+            Mobile App Development
+            <div class="rating-container">
+              <span class="rating-stars">★</span><span class="rating-stars">★</span><span class="rating-stars">☆</span><span class="rating-stars">☆</span><span class="rating-stars">☆</span>
+            </div>
+          </li>
+          <li class="purple">
+            Artificial Intelligence
+            <div class="rating-container">
+              <span class="rating-stars">★</span><span class="rating-stars">☆</span><span class="rating-stars">☆</span><span class="rating-stars">☆</span><span class="rating-stars">☆</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <img class="profile-pic" src="https://www.springboard.com/blog/wp-content/uploads/2020/07/5-qualities-of-high-performing-software-engineers.png" alt="Profile Picture">
+  </main>
+  <div class="contact-form">
+    <h2>Contact Me</h2>
+    <form action="mailto:vamshibanoth1422@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <input type="submit" value="Send">
+    </form>
+  </div>
+</body>
+</html>
